@@ -1,1 +1,6 @@
 ---
+placeholder:
+  type: string
+  required: true
+  default: "placeholder"
+  description: "This is a placeholder for the config schema"
