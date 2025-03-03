@@ -1,8 +1,9 @@
 [![Exchange Template](https://exchange.stackstorm.org/assets/images/st2-logo.png)](https://exchange.stackstorm.org/)
 
-# StackStorm Exchange Pack Template
+# StackStorm Exchange Basic Blocks Pack
 
-This is a basic template directory structure for a StackStorm Integration Pack.
+This is a Pack containing basic block, like replace_string, str_2_json.
+Also, this is WIP pack, so it will be updated with more blocks.
 
 ## How to Use
 
