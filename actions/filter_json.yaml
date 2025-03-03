@@ -1,0 +1,25 @@
+---
+  name: "filter_json"
+  runner_type: "python-script"
+  description: "Take an array of json objects and make each object have the same keys. Missing keys will be added with a value of ''."
+  enabled: true
+  entry_point: "filter_json.py"
+  parameters:
+    json_data:
+      type: "array"
+      description: "Array of Json object to filter"
+      required: true
+    to_exclude:
+      type: "array"
+      description: "Array of keys to exclude"
+      required: false
+    to_include:
+      type: "array"
+      description: "Array of keys to include"
+      required: false
+  output_schema:
+    type: "object"
+    properties:
+      json_data:
+        type: "object"
+        description: "filtered json object"

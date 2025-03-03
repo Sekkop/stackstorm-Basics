@@ -1,0 +1,17 @@
+---
+  name: "json_to_csv"
+  runner_type: "python-script"
+  description: "Take an array of json objects and convert it to a csv file."
+  enabled: true
+  entry_point: "json_to_csv.py"
+  parameters:
+    json_data:
+      type: "array"
+      description: "Array of Json object to normalise"
+      required: true
+  output_schema:
+    type: "object"
+    properties:
+      csv_data:
+        type: "string"
+        description: "Csv data"

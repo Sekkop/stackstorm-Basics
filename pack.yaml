@@ -1,0 +1,9 @@
+---
+ref: basics
+name: basics
+description: Basic utilities Blocks
+version: 0.2.0
+author: Corentin Soulet
+email: corentin.soulet@sekkop.com
+python_versions:
+  - "3"

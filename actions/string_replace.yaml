@@ -1,0 +1,28 @@
+---
+  name: "string_replace"
+  runner_type: "python-script"
+  description: "Replace a substring in a string."
+  enabled: true
+  entry_point: "string_replace.py"
+  parameters:
+    string:
+      type: "string"
+      description: "String to replace"
+      required: true
+    match:
+      type: "string"
+      description: "Substring to match"
+      required: true
+    replace:
+      type: "string"
+      description: "String to replace the match"
+      required: true
+  output_schema:
+    type: "object"
+    properties:
+      status:
+        type: "string"
+        description: "Status of the operation"
+      output:
+        type: "string"
+        description: "String after replacement"

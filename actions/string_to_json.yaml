@@ -1,0 +1,19 @@
+---
+  name: "string_to_json"
+  runner_type: "python-script"
+  description: "Convert a string from a json in string format to a json object."
+  enabled: true
+  entry_point: "string_to_json.py"
+  parameters:
+    data:
+      type: "string"
+      description: "Json in string format"
+      required: true
+  output_schema:
+    type: "object"
+    status:
+      type: "string"
+      description: "Status of the operation"
+    json_data:
+      type: "object"
+      description: "Json object"
